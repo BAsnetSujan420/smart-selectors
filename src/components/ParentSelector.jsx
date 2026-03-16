@@ -17,8 +17,20 @@ const ParentElement = styled.div`
   gap: 1rem;
   width: fit-content;
 
-  &:has(+ * .pink) {
+  //   &:has(+ * .pink) {
+  //     border-color: white;
+  //   }
+
+  //   &:has(> .pink) > *:not(.pink) {
+  //     background: white;
+  //   }
+
+  &:has(:nth-child(5):last-child) {
     border-color: white;
+  }
+
+  & > :nth-child(2 of .green) {
+    outline: 4px dotted yellow;
   }
 `;
 
