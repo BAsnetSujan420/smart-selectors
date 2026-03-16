@@ -16,6 +16,10 @@ const ParentElement = styled.div`
   display: flex;
   gap: 1rem;
   width: fit-content;
+
+  &:has(+ * .pink) {
+    border-color: white;
+  }
 `;
 
 const Circle = styled.div`
