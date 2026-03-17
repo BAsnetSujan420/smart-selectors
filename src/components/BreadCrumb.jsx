@@ -8,7 +8,12 @@ const Wrapper = styled.ul`
   gap: 6px;
   margin-block: 24px;
 `;
-const List = styled.li``;
+const List = styled.li`
+  &:has(~ li .current)::after {
+    content: '/';
+    margin-inline-start: 6px;
+  }
+`;
 const Link = styled.a`
   &.current {
     text-decoration: none;
