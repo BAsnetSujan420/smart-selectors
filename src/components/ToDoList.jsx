@@ -31,6 +31,12 @@ const Row = styled.div`
 
 const Label = styled.label`
   cursor: pointer;
+
+  &:has(input:checked),
+  &:has(+ input:checked) {
+    color: steelblue;
+    text-decoration: line-through;
+  }
 `;
 
 const Checkbox = styled.input`
