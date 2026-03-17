@@ -7,6 +7,17 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  body:has(input.blur-answers:checked) .answer {
+    filter: blur(3px);
+  }
+
+  body:has(input.blur-answers:checked) .visibility-label::before {
+    content: "Hide ";
+  }
+
+  body:not(:has(input.blur-answers:checked)) .visibility-label::before {
+    content: "Show ";
+  }
 `;
 
 const Container = styled.div`
