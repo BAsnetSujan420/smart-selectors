@@ -9,12 +9,25 @@ const Card = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  &:has(p) {
+    max-width: 400px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &:not(:has(p)) {
+    max-width: 250px;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   height: auto;
   display: block;
+  ${Card}:has(p) & {
+    width: 50%;
+  }
 `;
 
 const Text = styled.p`
