@@ -29,6 +29,10 @@ const CardList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
+
+  &:has(li:hover) li:not(:hover) {
+    filter: blur(4px);
+  }
 `;
 
 const Card = styled.li`
