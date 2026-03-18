@@ -1,3 +1,4 @@
+import AdaptiveCard from './components/AdaptiveCard';
 import BreadCrumb from './components/BreadCrumb';
 import Gallery from './components/Gallery';
 import ParentSelector from './components/ParentSelector';
@@ -11,7 +12,8 @@ function App() {
       {/* <BreadCrumb />
       <TodoList />
       <QAList /> */}
-      <Gallery />
+      {/* <Gallery /> */}
+      <AdaptiveCard />
     </>
   );
 }
