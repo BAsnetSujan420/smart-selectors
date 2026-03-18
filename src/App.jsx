@@ -1,4 +1,5 @@
 import BreadCrumb from './components/BreadCrumb';
+import Gallery from './components/Gallery';
 import ParentSelector from './components/ParentSelector';
 import QAList from './components/QAList';
 import TodoList from './components/ToDoList';
@@ -7,9 +8,10 @@ function App() {
   return (
     <>
       {/* <ParentSelector /> */}
-      <BreadCrumb />
+      {/* <BreadCrumb />
       <TodoList />
-      <QAList />
+      <QAList /> */}
+      <Gallery />
     </>
   );
 }
