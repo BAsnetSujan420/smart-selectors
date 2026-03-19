@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+  &:has(input[value='list']:checked) .card-list {
+    grid-template-columns: 1fr;
+  }
+
+  &:has(input[value='grid']:checked) .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
 
 const Section = styled.section`
   padding: 16px;
