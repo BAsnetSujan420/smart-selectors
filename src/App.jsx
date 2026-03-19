@@ -1,5 +1,6 @@
 import AdaptiveCard from './components/AdaptiveCard';
 import BreadCrumb from './components/BreadCrumb';
+import BarsRow from './components/BubbleEffect';
 import Gallery from './components/Gallery';
 import LayoutSwitcher from './components/LayoutSwitcher';
 import ParentSelector from './components/ParentSelector';
@@ -15,7 +16,8 @@ function App() {
       <QAList /> */}
       {/* <Gallery /> */}
       {/* <AdaptiveCard /> */}
-      <LayoutSwitcher />
+      {/* <LayoutSwitcher /> */}
+      <BarsRow />
     </>
   );
 }
