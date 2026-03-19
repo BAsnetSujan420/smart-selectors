@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import LayoutSwitcher from './components/LayoutSwitcher';
 import ParentSelector from './components/ParentSelector';
 import QAList from './components/QAList';
+import SimplifySector from './components/SimplifySector';
 import TodoList from './components/ToDoList';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <Gallery /> */}
       {/* <AdaptiveCard /> */}
       {/* <LayoutSwitcher /> */}
-      <BarsRow />
+      {/* <BarsRow /> */}
+      <SimplifySector />
     </>
   );
 }
