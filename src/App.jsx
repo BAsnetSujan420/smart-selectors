@@ -1,6 +1,7 @@
 import AdaptiveCard from './components/AdaptiveCard';
 import BreadCrumb from './components/BreadCrumb';
 import Gallery from './components/Gallery';
+import LayoutSwitcher from './components/LayoutSwitcher';
 import ParentSelector from './components/ParentSelector';
 import QAList from './components/QAList';
 import TodoList from './components/ToDoList';
@@ -13,7 +14,8 @@ function App() {
       <TodoList />
       <QAList /> */}
       {/* <Gallery /> */}
-      <AdaptiveCard />
+      {/* <AdaptiveCard /> */}
+      <LayoutSwitcher />
     </>
   );
 }
