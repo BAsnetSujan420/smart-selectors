@@ -23,9 +23,25 @@ const Bar = styled.li`
     transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
     opacity 0.2s linear;
 
+  &:has(+ li + li:hover) {
+    transform: scaleY(1.1);
+  }
+
+  &:has(+ li:hover) {
+    transform: scaleY(1.2);
+  }
+
   &:hover {
     transform: scaleY(1.3);
     opacity: 1;
+  }
+
+  &:hover + li {
+    transform: scaleY(1.2);
+  }
+
+  &:hover + li + li {
+    transform: scaleY(1.1);
   }
 `;
 
