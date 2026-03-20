@@ -1,4 +1,5 @@
 import AdaptiveCard from './components/AdaptiveCard';
+import AttributeSelector from './components/AttributeSelector';
 import BreadCrumb from './components/BreadCrumb';
 import BarsRow from './components/BubbleEffect';
 import Gallery from './components/Gallery';
@@ -19,7 +20,8 @@ function App() {
       {/* <AdaptiveCard /> */}
       {/* <LayoutSwitcher /> */}
       {/* <BarsRow /> */}
-      <SimplifySector />
+      {/* <SimplifySector /> */}
+      <AttributeSelector />
     </>
   );
 }
