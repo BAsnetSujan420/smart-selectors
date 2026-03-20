@@ -14,7 +14,7 @@ const Section = styled.section`
     color: skyblue;
   }
 
-  a[class|='link'] {
+  a[class^='link'] {
     color: orangered;
     text-decoration-style: dotted;
     text-decoration-color: white;
@@ -57,6 +57,26 @@ const Button = styled.button`
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+
+  &[class$='outline'] {
+    background: transparent;
+    color: var(--bg);
+    border: 2px solid var(--bg);
+
+    &:hover {
+      background: var(--bg);
+      color: white;
+    }
+  }
+
+  &[class$='accent'] {
+    background: transparent;
+    color: var(--bg);
+
+    &:hover {
+      background: rgba(37, 99, 235, 0.1);
+    }
   }
 `;
 
