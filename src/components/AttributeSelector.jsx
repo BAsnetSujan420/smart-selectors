@@ -19,6 +19,14 @@ const Section = styled.section`
     text-decoration-style: dotted;
     text-decoration-color: white;
   }
+
+  a[href$='.pdf']::after {
+    content: '📄';
+  }
+
+  a[href^='http']::after {
+    content: ' 🔗';
+  }
 `;
 
 const Button = styled.button`
