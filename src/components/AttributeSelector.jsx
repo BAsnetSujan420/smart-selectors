@@ -13,6 +13,12 @@ const Section = styled.section`
     margin-right: 1rem;
     color: skyblue;
   }
+
+  a[class|='link'] {
+    color: orangered;
+    text-decoration-style: dotted;
+    text-decoration-color: white;
+  }
 `;
 
 const Button = styled.button`
